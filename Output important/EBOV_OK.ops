@@ -1,0 +1,18 @@
+
+Operator analysis
+Operator                                          Tuning   Count      Time     Time/Op  Pr(accept) Smoothed_Pr(accept)
+scale(kappa)                                      0.367   2136126    3723745  1.74     0.2339      0.22        
+deltaExchange(frequencies)                        0.023   2133060    3717128  1.74     0.2341      0.23        
+scale(alpha)                                      0.136   2133269    3687022  1.73     0.2336      0.26        
+scale(ucld.mean)                                  0.615   6400558    11663849 1.82     0.234       0.28        
+scale(ucld.stdev)                                 0.172   6401196    11609592 1.81     0.234       0.28        
+up:nodeHeights(treeModel) down:ucld.mean          0.996   6400841    7923842  1.24     0.234       0.22        
+swapOperator(branchRates.categories)                      21351632   18860372 0.88     0.8886      0.88        
+uniformInteger(branchRates.categories)                    21336377   17452550 0.82     0.9225      0.94        
+subtreeLeap(treeModel)                            0.12    320013939  302165682 0.94     0.234       0.25        
+subtreeJump(treeModel)                                    32003301   31525733 0.99     0.0355      0.03        
+gmrfBlockUpdateOperator                                   4264941    1845181  0.43     0.6194      0.7         
+scale(skygrid.precision)                          0.307   2132192    894544   0.42     0.2341      0.2         
+scale(Location.diffusion.rates)                   0.115   64023580   32999424 0.52     0.234       0.27        
+precisionGibbsOperator                                    4268988    2295378  0.54     1.0         1.0         
+
