@@ -69,6 +69,7 @@ par(oma=c(0,0,0,0), mar=c(5.0,5.0,1.0,1.0), lwd=0.3, bty="o",
 
 # Initialiser le graphique de Rt dans le temps:
 plot(R_dates, R_median, lwd=0.7, type="n", axes=FALSE, xlab=NA, ylab=NA,
+     main="Evolution de Rt avec propagation de l'incertitude du SI",
      xlim=c(min(R_dates), max(R_dates)),
      ylim=c(min(R_lower, na.rm = TRUE) - 0.2, max(R_upper, na.rm = TRUE) + 0.3),
      xaxs="i")
