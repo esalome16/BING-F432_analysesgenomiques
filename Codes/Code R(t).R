@@ -87,6 +87,9 @@ abline(h=1, lty=2, lwd=0.5, col="red")
 # Ajouter les axes et le label de l’axe Y:
 axis.Date(1, at=seq.Date(from=min(R_dates), to=max(R_dates), by="2 weeks"),
           format="%Y-%m", las=2, cex.axis=0.7)
+axis(side = 2, lwd = 0.5, cex.axis = 0.7, mgp = c(0, 0.6, 0), lwd.tick = 0.5,
+     col.lab = "gray30", col = "gray30", tck = -0.03, las = 1, padj = 0.4,
+     at = seq(0, ceiling(max(R_upper, na.rm = TRUE)), by = 1))
 mtext("Effective reproduction number (Rt)", side=2, col="gray30", cex=0.9, line=1.7)
 
 
